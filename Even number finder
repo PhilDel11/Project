@@ -1,0 +1,24 @@
+# Take two numbers as input
+start = int(input())
+end = int(input())
+
+# Create a list from start to end (not including end)
+numbers = list(range(start, end))
+
+# Find the first even number greater than 5
+first_even_gt_5 = None
+for num in numbers:
+    if num > 5 and num % 2 == 0:
+        first_even_gt_5 = num
+        break
+
+# Find the first number divisible by 7
+first_div_by_7 = None
+for num in numbers:
+    if num % 7 == 0:
+        first_div_by_7 = num
+        break
+
+# Output the results
+print(f"First even number greater than 5: {first_even_gt_5}")
+print(f"First number divisible by 7: {first_div_by_7}")
